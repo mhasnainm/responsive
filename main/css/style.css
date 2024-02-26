@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 44%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-repeat: no-repeat;
+}
+.nav-list{
+width: 70%;
+/* background-color: rgb(0, 0, 0); */
+display: flex;
+align-items: center;
+
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-list li, a{
+ text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.nav-list li, a:hover{
+    text-decoration: underline;
+    color: #051181b7;
+  cursor: pointer;
+  background: none;
+
+}
+.rightNav{
+    /* background-color: blueviolet; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+    align-items: center;
+    justify-content: center;
+    margin-left:150px;
+}
+.rightNav button{
+    margin-left:18  0px;
+}
+.background{
+    background-image: url(../pic/backgroud-img.jpg);
+    background: rgb(0, 0, 0, 0, 0.7);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-section{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 50%;
+    height: 70%;
+}
+
+.first-half{
+    margin-top: 150px;
+width: 65%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.secound-half{
+    width: 35%;
+}
+.secound-half img{
+    width: 60%;
+    height: 200px;
+    border: 3px solid rgba(0, 0, 0, 0.856);
+    border-radius: 0%;
+    display: block;
+    margin: auto;
+}
+.text-big{
+font-size: 30px;
+}
+
+.text-small{
+font-size: 15px;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align:middle;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 6px 3px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.section{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section-left{
+flex-direction: row-reverse
+}
+.paras{
+    padding: 0px 65px;
+
+}
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thumbnail img{
+    width: 270px;
+    border: 8px solid rgb(0, 4, 255);
+    border-radius: 50px;
+    margin-top: 15px;
+}
+.contact-us{
+    background-color: rgb(230, 225, 225);
+    height: 670px;
+}
+.contact-us img{
+    width: 1346px;
+    height: 150px;
+}
+.contact-us b{
+    color: black;
+}
+.text-advance{
+    text-align: center;
+    padding: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 196, 68);
+    font-size: 30px;
+    
+}
+.form{
+    max-width: 500px;
+    margin: 22px auto;
+}
+.form input{
+    margin-top: 10px 0;
+    width: 100%;
+    font-size: 19px;
+    padding: 5px 3px;
+    border: 2px solid rgb(190, 179, 179);
+    border-radius: 8px;
+    gap: 20px;
+    padding-bottom: 5px;
+}
+
+.thumbnail img:hover{
+    width: 273px;
+    border: 8px solid rgb(0, 132, 255);
+    border-radius: 50px;
+    margin-top: 15px;
+}
+.btn-dark{
+color: rgba(0, 0, 255, 0.822);
+border: 3px solid red;
+}
+.text-footer{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 430px;
+    font-size: 20px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    padding: 20px ;
+    border-radius: 20px;
+}
+.btn-sm{
+    width: 90px;
+    height: 40px;
+    font-size: 13.5px;
+}
+.btn-sm:hover{
+border: 2px solid rgba(0, 0, 255, 0.822);
+color: red;
+}
+
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 5%;
+}
+.line{
+    width: 33px;
+    background-color: #fff;
+    height: 4px;
+    margin: 5px 3px ;
+}
+@media only screen and (max-width:1334px)  {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+width: 40%;
+height: 18px;
+    }
+    .rightNav button{
+        width: 80px;
+        /* icon ay ga */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: block;
+        }
+        .h-nav-resp{
+            height: 72px;
+        }
+        .v-class-resp{
+            opacity: 0;
+        }
+
+}
